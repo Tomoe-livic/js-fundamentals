@@ -1,0 +1,127 @@
+:root {
+  --bg-start: #340059;
+  --bg-end: #1B3644;
+  --text-color: #BDF226;
+  --accent: #FF7340;
+  --btn-bg: #1B3644;
+  --btn-border: #BDF226;
+  --btn-text: #FF7340;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-start: #F4EBFF;
+    --bg-end: #DCEEF2;
+    --text-color: #340059;
+    --accent: #B85C38;
+    --btn-bg: #FFFFFF;
+    --btn-border: #340059;
+    --btn-text: #B85C38;
+  }
+}
+
+html {
+  background: linear-gradient(to bottom, var(--bg-start), var(--bg-end));
+  color: var(--text-color);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 40px;
+  margin-left: 6px;
+}
+
+legend {
+  margin-right: 60px;
+}
+
+#totale {
+  margin-right: 6px;
+  margin-top: 35px;
+  height: 60px;
+  font-size: 25px;
+  border: 1px solid var(--accent);
+}
+
+#calcolo {
+  font-size: 35px;
+  margin: 0;
+  text-align: center;
+}
+
+#main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dice {
+  overflow: hidden;
+  display: none;
+  width: 100%;
+  min-width: 150px;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  image-rendering: pixelated;
+}
+
+.dice.active {
+  display: block;
+}
+
+button {
+  width: 200px;
+  font-size: 40px;
+  border-radius: 8px;
+  padding: 4px;
+  display: block;
+  margin: 0 auto;
+  background-color: var(--btn-bg);
+  border-color: var(--btn-border);
+  color: var(--btn-text);
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 15px;
+}
+
+button.quantity {
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 36px;
+    margin-left: 12px;
+  }
+
+  button {
+    width: 140px;
+    font-size: 28px;
+  }
+
+  button.quantity {
+    width: 40px;
+  }
+
+  #totale {
+    margin-right: 12px;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Tractum",
+  "short_name": "Tractum",
+  "description": "A simple pixel-art dice roller.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#340059",
+  "theme_color": "#340059",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

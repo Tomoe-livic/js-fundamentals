@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tractum</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="icon.svg">
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Tractum</h1>
+
+        <fieldset id="totale">
+            <legend>Total: </legend>
+            <p id="calcolo"></p>
+        </fieldset>
+    </header>
+
+    <main id="main">
+        <div class="dado">
+        <img src="PixelDice_White 1.png" class="dice active" data-value="1"/>
+        <img src="PixelDice_White 2.png" class="dice" data-value="2"/>
+        <img src="PixelDice_White 3.png" class="dice" data-value="3"/>
+        <img src="PixelDice_White 4.png" class="dice" data-value="4"/>
+        <img src="PixelDice_White 5.png" class="dice" data-value="5"/>
+        <img src="PixelDice_White 6.png" class="dice" data-value="6"/>
+        </div>
+    </main>
+
+    <footer>
+        <button id="minus" class="quantity" type="button">-</button>
+        <button id="throw" type="button">Throw</button>
+        <button id="plus" class="quantity" type="button">+</button>
+    </footer>
+</body>
+</html>
