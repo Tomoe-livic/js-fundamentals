@@ -25,6 +25,7 @@ html {
   color: var(--text-color);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  touch-action: manipulation;
 }
 
 header {
