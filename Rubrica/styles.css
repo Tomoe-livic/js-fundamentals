@@ -1,0 +1,105 @@
+* {
+    background-color: #000831;
+    color: #96BFE6;
+    border-color: #B5D1CC;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: auto;
+}
+
+#cerca {
+    display: flex;
+    justify-content: space-between;
+}
+
+#search {
+    font-size: 24px;
+    width: 200px;
+}
+
+@media (max-width: 600px) {
+    #search {
+        max-width: 100px;
+    }
+}
+
+#lens {
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+    background: transparent;
+    margin-top: 32px;
+    margin-right: 10px;
+    border: none;
+}
+
+
+h1 {
+    margin-left: 8px;
+    font-size: 38px;
+}
+
+main {
+    margin-top: 110px;
+    height: 73vh;
+    overflow-y: scroll;
+    font-size: 30px;
+    margin-left: 8px;
+}
+
+#list .line {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+#list hr {
+    position: relative;
+    left: 0px;
+    border: 2px solid #96BFE6;
+    border-radius: 15px;
+    width: 92%;
+}
+
+.del {
+    border: none;
+    font-size: 20px;
+    color: #FFE600;
+    cursor: pointer;
+}
+
+.del:hover {
+   color: #bca900; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+}
+
+#newN, #newNu, #add, legend {
+    font-size: 20px;
+    padding: 3px;
+}
+
+#newN, #newNu, #add {
+    margin-bottom: 8px;
+}
+
+#add {
+    margin-left: 53px;
+}
+
+#add:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    cursor: pointer;
+}

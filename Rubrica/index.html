@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rubrica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div id ="cerca">
+        <h1>Rubrica</h1>
+
+        <div>
+            <input type="text" name="search" id="search">
+            <button id="lens" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 100"
+                aria-hidden="true">
+                <circle cx="42"
+                cy="42"
+                r="27"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="7"/>
+                <line x1="62"
+                y1="62"
+                x2="84"
+                y2="84"
+                stroke="currentColor"
+                stroke-width="8"
+                stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <div id="list"></div>
+    </main>
+
+    <footer>
+        <form id="contactForm">
+            <fieldset>
+                <legend>Nuovo Contatto</legend>
+
+                <input id="newN" type="text" placeholder="Nome" maxlength="27" aria-label="Nome" required>      
+                
+                <input type="tel" name="cell." id="newNu" placeholder="e.g. +33 333 333 3333" maxlength="16" aria-label="Numero di telefono" required>
+            
+                <button type="submit" id="add">Aggiungi</button>
+
+            </fieldset>
+        </form>
+    </footer>
+</body>
+</html>
